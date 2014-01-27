@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finder.Web", "Finder.Web\Finder.Web.csproj", "{1221910F-FAAA-496A-AE68-99E88BB7835C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finder.Web.Tests", "Finder.Web.Tests\Finder.Web.Tests.csproj", "{9B23B016-1C04-47CB-9D70-CC90189E1D4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finder.Web.Specs", "Finder.Web.Specs\Finder.Web.Specs.csproj", "{9AFF4D25-BAA9-48F1-BBF7-11F6DA3CE840}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1221910F-FAAA-496A-AE68-99E88BB7835C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1221910F-FAAA-496A-AE68-99E88BB7835C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1221910F-FAAA-496A-AE68-99E88BB7835C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1221910F-FAAA-496A-AE68-99E88BB7835C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B23B016-1C04-47CB-9D70-CC90189E1D4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B23B016-1C04-47CB-9D70-CC90189E1D4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B23B016-1C04-47CB-9D70-CC90189E1D4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B23B016-1C04-47CB-9D70-CC90189E1D4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AFF4D25-BAA9-48F1-BBF7-11F6DA3CE840}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AFF4D25-BAA9-48F1-BBF7-11F6DA3CE840}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AFF4D25-BAA9-48F1-BBF7-11F6DA3CE840}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AFF4D25-BAA9-48F1-BBF7-11F6DA3CE840}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FluentAutomation.WatiN</name>
+    </assembly>
+    <members>
+        <member name="F:FluentAutomation.MouseControl.MouseEvent_LeftButtonDown">
+            <summary>
+            LeftButtonDown mouse event code
+            </summary>
+        </member>
+        <member name="F:FluentAutomation.MouseControl.MouseEvent_LeftButtonUp">
+            <summary>
+            LeftButtonUp mouse event code
+            </summary>
+        </member>
+        <member name="M:FluentAutomation.MouseControl.SetCursorPos(System.Int32,System.Int32)">
+            <summary>
+            Sets the cursor position.
+            </summary>
+            <param name="x">The x.</param>
+            <param name="y">The y.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FluentAutomation.MouseControl.MouseEvent(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Triggers mouse event.
+            </summary>
+            <param name="a">A.</param>
+            <param name="x">The x.</param>
+            <param name="y">The y.</param>
+            <param name="d">The d.</param>
+            <param name="e">The e.</param>
+        </member>
+        <member name="M:FluentAutomation.MouseControl.Click(System.Int32,System.Int32)">
+            <summary>
+            Clicks the specified point (X, Y coordinates).
+            </summary>
+            <param name="point">The point.</param>
+        </member>
+        <member name="M:FluentAutomation.MouseControl.SetPosition(System.Int32,System.Int32)">
+            <summary>
+            Sets the cursor position to the specified point (X, Y coordinates).
+            </summary>
+            <param name="point">The point.</param>
+        </member>
+        <member name="T:FluentAutomation.WatiN">
+            <summary>
+            WatiN FluentAutomation Provider
+            </summary>
+        </member>
+        <member name="F:FluentAutomation.WatiN.SelectedBrowser">
+            <summary>
+            Currently selected <see cref="T:FluentAutomation.WatiN.Browser"/>.
+            </summary>
+        </member>
+        <member name="M:FluentAutomation.WatiN.Bootstrap">
+            <summary>
+            Bootstrap WatiN provider and utilize Internet Explorer.
+            </summary>
+        </member>
+        <member name="M:FluentAutomation.WatiN.Bootstrap(FluentAutomation.WatiN.Browser)">
+            <summary>
+            Bootstrap WatiN provider and utilize the specified <paramref name="browser"/>.
+            </summary>
+            <param name="browser"></param>
+        </member>
+        <member name="T:FluentAutomation.WatiN.Browser">
+            <summary>
+            Supported browsers for the FluentAutomation WatiN provider.
+            </summary>
+        </member>
+        <member name="F:FluentAutomation.WatiN.Browser.InternetExplorer">
+            <summary>
+            Internet Explorer
+            </summary>
+        </member>
+    </members>
+</doc>
