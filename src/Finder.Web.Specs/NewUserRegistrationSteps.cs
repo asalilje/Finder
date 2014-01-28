@@ -9,31 +9,30 @@ namespace Finder.Web.Specs
 		[Binding]
 		public class NewUserRegistrationSteps
 		{
+			private readonly RegisterPageWrapper _wrapper;
 
-			private RegisterPageWrapper _registerPageWrapper;
-
-
-			public NewUserRegistrationSteps(RegisterPageWrapper registerPageWrapper)
+			public NewUserRegistrationSteps(RegisterPageWrapper wrapper)
 			{
-				_registerPageWrapper = registerPageWrapper;
+				_wrapper = wrapper;
 			}
+
 
 			[Given]
 			public void Given_I_m_on_the_registration_page()
 			{
-				_registerPageWrapper.GoToRegisterPage();
+				_wrapper.GoToRegisterPage();
 			}
 
 			[When]
-			public void When_I_enter_a_password_of_pwd()
+			public void When_I_enter_a_password_of_PASSWORD(string password)
 			{
-				_registerPageWrapper.SetPassword("pwd");
+				_wrapper.SetPassword(password);
 			}
 
 			[Then]
-			public void Then_the_password_strength_indicator_should_read_Dålig()
+			public void Then_the_password_strength_indicator_should_read_STRENGTH(string strength)
 			{
-				_registerPageWrapper.AssertPasswordStrength("Dålig");
+				_wrapper.AssertPasswordStrength(strength);
 			}
 
 		}

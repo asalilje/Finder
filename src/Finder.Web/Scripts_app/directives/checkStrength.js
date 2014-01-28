@@ -3,7 +3,7 @@
         restrict: 'A',
         link: function (scope, elem, attrs) {
             var strength = {
-                strengths: ['Dålig', 'Hyfsad', 'Bra', 'Suverän', 'FRA-säkert'],
+                strengths: ['Dålig', 'Hyfsad', 'Suverän'],
 
                 measureStrength: function (p) {
 
@@ -35,10 +35,8 @@
                 getStrength: function(s) {
                     var idx = 0;
                     if (s <= 10) { idx = 0; }
-                    else if (s <= 20) { idx = 1; }
-                    else if (s <= 30) { idx = 2; }
-                    else if (s <= 40) { idx = 3; }
-                    else { idx = 4; }
+                    else if (s <= 25) { idx = 1; }
+                    else { idx = 2; }
 
                     return this.strengths[idx];
                 },

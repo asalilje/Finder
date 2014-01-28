@@ -10,38 +10,38 @@
 
         <form role="form" name="newUserForm" novalidate ng-submit="register()">
 
-            <div class="form-group">
+            <!--<div class="form-group">
                 <label for="fullname">Ditt namn:</label>
                 <input type="text" class="form-control" name="fullname" ng-model="newuser.fullname" placeholder="Ditt namn" required />
                 <div ng-show="newUserForm.fullname.$dirty && newUserForm.fullname.$invalid">
                     <span ng-show="newUserForm.fullname.$error.required" class="form-error">Ditt namn behövs.</span>
                 </div>
-            </div>
+            </div>-->
 
             <div class="form-group">
                 <label for="email">E-post:</label>
                 <input type="email" class="form-control" name="email" ng-model="newuser.email" placeholder="E-post" required />
-                <div ng-show="newUserForm.email.$dirty && newUserForm.email.$invalid">
+                <!--<div ng-show="newUserForm.email.$dirty && newUserForm.email.$invalid">
                     <span ng-show="newUserForm.email.$error.required" class="form-error">Din e-post behövs.</span>
                     <span ng-show="newUserForm.email.$error.email" class="form-error">Ogiltig e-post.</span>
-                </div>
+                </div>-->
             </div>
 
             <div class="form-group">
                 <label for="username">Användarnamn:</label>
                 <input type="text" class="form-control" name="username" ng-model="newuser.username" placeholder="Användarnamn" required />
-                <div ng-show="newUserForm.username.$dirty && newUserForm.username.$invalid">
+                <!--<div ng-show="newUserForm.username.$dirty && newUserForm.username.$invalid">
                     <span ng-show="newUserForm.username.$error.required" class="form-error">Ditt användarnamn behövs.</span>
-                </div>
+                </div>-->
             </div>
 
             <div class="form-group">
                 <label for="password">Lösenord:</label>
                 <input type="password" class="form-control" id="password" name="password" ng-model="newuser.password" placeholder="Lösenord" required />
                 <span id="strength" check-strength="newuser.password"></span>
-                <div ng-show="newUserForm.password.$dirty && newUserForm.password.$invalid">
+                <!--<div ng-show="newUserForm.password.$dirty && newUserForm.password.$invalid">
                     <span ng-show="newUserForm.password.$error.required" class="form-error">Ditt lösenord behövs.</span>
-                </div>
+                </div>-->
             </div>
 
             <button type="submit" class="btn btn-primary" ng-disabled="newUserForm.$invalid">Registrera</button>
