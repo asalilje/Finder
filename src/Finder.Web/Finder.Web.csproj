@@ -16,9 +16,9 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
-    <IISExpressAnonymousAuthentication />
-    <IISExpressWindowsAuthentication />
-    <IISExpressUseClassicPipelineMode />
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>enabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -334,10 +334,11 @@
     <Content Include="Scripts\i18n\angular-locale_zh.js" />
     <Content Include="Scripts\i18n\angular-locale_zu-za.js" />
     <Content Include="Scripts\i18n\angular-locale_zu.js" />
-    <Content Include="Scripts_app\app.js" />
+    <Content Include="Scripts_app\global.js" />
     <Content Include="Scripts_app\controllers\homeController.js" />
     <Content Include="Scripts_app\controllers\registerController.js" />
-    <Content Include="Scripts_app\finderModule.js" />
+    <Content Include="Scripts_app\directives\checkStrength.js" />
+    <Content Include="Scripts_app\app.js" />
     <Content Include="Scripts_app\services\userService.js" />
     <Content Include="Templates\Home.html" />
     <Content Include="Templates\Register.html" />

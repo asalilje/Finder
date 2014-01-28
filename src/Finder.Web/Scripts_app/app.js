@@ -1,13 +1,18 @@
-﻿(function (app) {
+﻿var finderApp = angular.module('finder', ['ngRoute']).config(['$routeProvider',
+    function ($routeProvider) {
 
-    app.isDebug = true;
+        $routeProvider
+            .when('/',
+                {
+                    templateUrl: '/Templates/Home.html',
+                    controller: 'homeController'
+                })
+            .when('/register',
+                {
+                    templateUrl: '/Templates/Register.html',
+                    controller: 'registerController'
+                });
 
-    app.log = function (msg) {
-        if (app.isDebug) {
-            console.log(msg);
-        }
-    };
+        $routeProvider.otherwise({ redirectTo: "/" });
 
-})(window.app = window.app || {});
-
-
+    }]);

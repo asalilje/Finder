@@ -1,5 +1,5 @@
 ﻿
-finderModule.service("userService", [
+finderApp.service("userService", [
     "$http", "$q", function($http, $q) {
 
         var _registerUser = function(newUser) {

@@ -37,7 +37,8 @@
 
             <div class="form-group">
                 <label for="password">Lösenord:</label>
-                <input type="password" class="form-control" name="password" ng-model="newuser.password" placeholder="Lösenord" required />
+                <input type="password" class="form-control" id="password" name="password" ng-model="newuser.password" placeholder="Lösenord" required />
+                <span id="strength" check-strength="newuser.password"></span>
                 <div ng-show="newUserForm.password.$dirty && newUserForm.password.$invalid">
                     <span ng-show="newUserForm.password.$error.required" class="form-error">Ditt lösenord behövs.</span>
                 </div>
