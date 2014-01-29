@@ -12,7 +12,7 @@ namespace Finder.Web.Specs.Wrappers
 
 		public Browser()
 		{
-			SeleniumWebDriver.Bootstrap(SeleniumWebDriver.Browser.Chrome);
+			SeleniumWebDriver.Bootstrap();
 			Settings.DefaultWaitUntilTimeout = new TimeSpan(0, 0, 0, 5);
 			Settings.ScreenshotPath = @"C:\temp\results";
 		}

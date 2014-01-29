@@ -9,11 +9,7 @@ namespace Finder.Web.Specs.Wrappers
 {
 	public class WrapperBase
 	{
-		public WrapperBase()
-		{
-			
-		}
-
+		
 		private static Browser _instance;
 			
 		public static INativeActionSyntaxProvider Browser
