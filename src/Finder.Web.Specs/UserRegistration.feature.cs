@@ -31,8 +31,8 @@ namespace Finder.Web.Specs
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "User Registration", "In order to access the bacon heaven\nAs a potential new user\nI want to create an a" +
-                    "ccount", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "User Registration", "In order to access the member area\nas a potential new user\nI want to register an " +
+                    "account", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -69,52 +69,52 @@ namespace Finder.Web.Specs
             testRunner.CollectScenarioErrors();
         }
         
-        public virtual void PasswordStrength(string password, string strength, string[] exampleTags)
+        public virtual void PasswordStrengthIndicator(string password, string strength, string[] exampleTags)
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Password strength", exampleTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Password strength indicator", exampleTags);
 #line 6
-this.ScenarioSetup(scenarioInfo);
+ this.ScenarioSetup(scenarioInfo);
 #line 7
-testRunner.Given("I am on the registration page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I am on the registration page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 8
-testRunner.When(string.Format("I enter a password of {0}", password), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When(string.Format("I enter a password of {0}", password), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 9
-testRunner.Then(string.Format("the password strength indicator should read {0}", strength), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then(string.Format("the strength indicator should read {0}", strength), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Password strength")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Password strength indicator")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "User Registration")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Pass")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:password", "Pass")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:strength", "Dålig")]
-        public virtual void PasswordStrength_Pass()
+        public virtual void PasswordStrengthIndicator_Pass()
         {
-            this.PasswordStrength("Pass", "Dålig", ((string[])(null)));
+            this.PasswordStrengthIndicator("Pass", "Dålig", ((string[])(null)));
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Password strength")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Password strength indicator")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "User Registration")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Password")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:password", "Password")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:strength", "Hyfsad")]
-        public virtual void PasswordStrength_Password()
+        public virtual void PasswordStrengthIndicator_Password()
         {
-            this.PasswordStrength("Password", "Hyfsad", ((string[])(null)));
+            this.PasswordStrengthIndicator("Password", "Hyfsad", ((string[])(null)));
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Password strength")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Password strength indicator")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "User Registration")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Password1")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:password", "Password1")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:strength", "Suverän")]
-        public virtual void PasswordStrength_Password1()
+        public virtual void PasswordStrengthIndicator_Password1()
         {
-            this.PasswordStrength("Password1", "Suverän", ((string[])(null)));
+            this.PasswordStrengthIndicator("Password1", "Suverän", ((string[])(null)));
         }
     }
 }

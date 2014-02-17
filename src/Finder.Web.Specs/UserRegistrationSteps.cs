@@ -1,5 +1,7 @@
 ﻿using System;
+
 using Finder.Web.Specs.Wrappers;
+
 using TechTalk.SpecFlow;
 
 namespace Finder.Web.Specs
@@ -7,29 +9,29 @@ namespace Finder.Web.Specs
     [Binding]
     public class UserRegistrationSteps
     {
-	    private readonly RegisterPageWrapper _wrapper;
+				private readonly RegisterPageWrapper wrapper;
 
-	    public UserRegistrationSteps(RegisterPageWrapper wrapper)
+				public UserRegistrationSteps(RegisterPageWrapper wrapper)
 				{
-					_wrapper = wrapper;
+					this.wrapper = wrapper;
 				}
 
 	    [Given]
-				public void Given_I_m_on_the_registration_page()
+				public void Given_I_am_on_the_registration_page()
 				{
-						_wrapper.GoToRegisterPage();
+						wrapper.GoToRegisterPage();
 				}
 
-				[When]
+        [When]
 				public void When_I_enter_a_password_of_PASSWORD(string password)
 				{
-						_wrapper.SetPassword(password);
+						wrapper.SetPassword(password);
 				}
 
-				[Then]
-				public void Then_the_password_strength_indicator_should_read_STRENGTH(string strength)
+        [Then]
+				public void Then_the_strength_indicator_should_read_STRENGTH(string strength)
 				{
-						_wrapper.AssertPasswordStrength(strength);
+						wrapper.AssertPasswordStrength(strength);
 				}
     }
 }

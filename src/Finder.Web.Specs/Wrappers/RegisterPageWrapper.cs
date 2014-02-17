@@ -1,15 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using FluentAutomation;
-
-using OpenQA.Selenium;
-
-namespace Finder.Web.Specs.Wrappers
+﻿namespace Finder.Web.Specs.Wrappers
 {
 	public class RegisterPageWrapper : WrapperBase
 	{
